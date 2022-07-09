@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:wght@300;400;700;900&family=Ubuntu:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Merriweather", serif;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: "Merriweather", serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #C5E4E7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  width: 1620px;
+  height: 720px;
+  background-color: white;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  font-size: 36px;
+}
+
+input {
+  font-size: 36px;
+}
+
+.content-box {
+  border-radius: 30px;
+  background-color: aqua;
+}
+
+.left-box {
+  padding: 20px 40px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+}
+.left-box .input-lable {
+  color: #a9b6b5;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tip-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  color: white;
+}
+
+.tip {
+  background-color: #00474C;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px 0px;
+}
+.tip:hover {
+  cursor: pointer;
+}
+.tip.active, .tip:hover {
+  background-color: #97E1D8;
+  color: #00474C;
+}
+
+.tip.input {
+  background-color: #EDF1F2;
+  text-align: right;
+  padding: 10px;
+}
+.tip.input:hover, .tip.input:focus {
+  outline: 4px solid #97E1D8;
+  color: #00474C;
+}
+.tip.input::-webkit-input-placeholder {
+  text-align: center;
+}
+.tip.input::-moz-placeholder {
+  text-align: center;
+}
+.tip.input:-ms-input-placeholder {
+  text-align: center;
+}
+.tip.input::-ms-input-placeholder {
+  text-align: center;
+}
+.tip.input::placeholder {
+  text-align: center;
+}
+
+input {
+  text-align: right;
+  padding: 15px 30px;
+  width: 100%;
+  background-color: #EDF1F2;
+  border-radius: 10px;
+}
+input:hover, input:focus {
+  outline: 4px solid #97E1D8;
+  color: #00474C;
+}
+input:hover {
+  cursor: pointer;
+}
+
+.input-box {
+  position: relative;
+}
+.input-box ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 26px;
+  color: gray;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.input-box .icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 26px;
+  color: gray;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.error {
+  color: #FF6961;
+}
+
+input.error {
+  outline: 4px solid #FF6961;
+}
+
+.title.error {
+  display: none;
+}
+
+.right-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 40px;
+  background-color: #00474B;
+}
+.right-box .button-reset {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 36px;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(37, 194, 173, 0.9);
+  color: #00474C;
+}
+.right-box .button-reset:hover {
+  background-color: rgba(151, 225, 216, 0.9);
+}
+
+.text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.text-box .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #25C2AD;
+  font-size: 50px;
+}
+.text-box .money .icon {
+  margin-right: 5px;
+}
+.text-box > * {
+  margin: 50px 0px;
+}
+
+.title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.title-box * {
+  margin-bottom: 10px;
+}
+.title-box .text-box-name {
+  color: white;
+  font-size: 26px;
+}
+.title-box .text-box-person {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1700px) {
+  .content {
+    font-size: 20px;
+    width: 1240px;
+    height: 600px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+
+  .left-box .input-lable {
+    font-size: 18px;
+  }
+
+  .tip {
+    padding: 25px 0px;
+  }
+
+  .title-box .text-box-name {
+    font-size: 20px;
+  }
+  .title-box .text-box-person {
+    font-size: 16px;
+  }
+
+  .text-box .money {
+    font-size: 36px;
+  }
+  .text-box > * {
+    margin: 25px 0px;
+  }
+
+  .right-box .button-reset {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .content {
+    font-size: 16px;
+    width: 860px;
+    height: 500px;
+    border-radius: 30px;
+    padding: 30px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  .left-box .input-lable {
+    font-size: 14px;
+  }
+
+  .tip {
+    padding: 15px 0px;
+  }
+
+  .input-box ion-icon {
+    font-size: 20px;
+  }
+
+  .input-box .icon {
+    font-size: 20px;
+  }
+
+  .title-box .text-box-name {
+    font-size: 20px;
+  }
+  .title-box .text-box-person {
+    font-size: 16px;
+  }
+
+  .text-box .money {
+    font-size: 36px;
+  }
+  .text-box > * {
+    margin: 25px 0px;
+  }
+
+  .right-box .button-reset {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    overflow: auto;
+  }
+
+  .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    padding: 50px;
+    font-size: 16px;
+    width: 100vw;
+    min-height: 100%;
+    border-radius: 0px;
+  }
+
+  .tip-group {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+
+  .left-box .input-lable {
+    font-size: 18px;
+  }
+
+  .tip {
+    padding: 25px 0px;
+  }
+
+  .left-box {
+    margin-bottom: 40px;
+  }
+
+  .title-box .text-box-name {
+    font-size: 20px;
+  }
+  .title-box .text-box-person {
+    font-size: 16px;
+  }
+
+  .text-box .money {
+    font-size: 36px;
+  }
+  .text-box > * {
+    margin: 25px 0px;
+  }
+
+  .right-box .button-reset {
+    font-size: 20px;
+  }
+}

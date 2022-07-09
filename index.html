@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="content-box white left-box">
+            
+            <div class="bill-box">
+                <div class="input-lable">Bill</div>
+                <div class="input-box">
+                    <div class="icon">$</div>
+                    <input class="bill"type="number" name="bill" placeholder="0">
+                </div>
+            </div>
+
+            <div class="radio-box">
+                <div class="input-lable">Select Tip %</div>
+                <div class="tip-group">
+                    <div class="tip active">5%</div>
+                    <div class="tip">10%</div>
+                    <div class="tip">15%</div>
+                    <div class="tip">20%</div>
+                    <div class="tip">25%</div>
+                    <input class="tip input" type="number" placeholder="Custom">
+                </div>
+            </div>
+
+            <div class="person-box">
+                <div class="input-lable">
+                    <div class="title">Number of People</div>
+                    <div class="title error">Can`t be zero</div>
+                </div>
+                <div class="input-box">
+                    <ion-icon name="person"></ion-icon>
+                    <input class="input person" type="number" placeholder="0">
+                </div>
+            </div>
+
+        </div>
+        <div class="content-box green right-box">
+            <div class="tip-box">
+                <div class="text-box">
+                    <div class="title-box">
+                        <div class="text-box-name">Tip Amount</div>
+                        <div class="text-box-person">/ person</div>
+                    </div>
+                    <div class="money"> 
+                        <div class="icon">$</div>
+                        <div class="tip-amount">0.00</div>
+                    </div>    
+                </div>
+
+                <div class="text-box">
+                    <div class="title-box">
+                        <div class="text-box-name">Total</div>
+                        <div class="text-box-person">/ person</div>
+                    </div>
+                    <div class="money"> 
+                        <div class="icon">$</div>
+                        <div class="total">0.00</div>
+                    </div>    
+                </div>
+            </div>
+            
+
+            <div class="button-reset">Reset</div>
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
