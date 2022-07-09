@@ -412,6 +412,7 @@ input.error {
 @media screen and (max-width: 800px) {
     body {
         overflow: auto;
+        height: auto;
     }
     
     .content {
@@ -419,54 +420,35 @@ input.error {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 50px;
 
-        padding: 50px;
+        padding: 20px;
 
         font-size: 16px;
         width: 100vw;
-        min-height: 100%;
         border-radius: 0px;
+
+        height: auto;
+        
+        .left-box {
+            padding: 0px;
+            padding-bottom: 50px;
+            height: auto;
+
+            & > * {
+                padding-bottom: 20px;
+            }
+        }
+
+        .right-box {
+            height: auto;
+        }
     }
+    
+    
 
     .tip-group {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
         column-gap: 20px;
-    }
-
-    input {
-        font-size: 20px;
-    }
-
-    .left-box .input-lable {
-        font-size: 18px;
-    }
-
-    .tip {
-        padding: 25px 0px;
-    }
-
-    .left-box {
-        margin-bottom: 40px;
-    }
-
-    .title-box {
-        .text-box-name {
-            font-size: 20px;
-        }
-    
-        .text-box-person {
-            font-size: 16px;
-        }
-    }
-
-    .text-box {
-        .money {
-            font-size: 36px;
-        }
-    
-        > * { 
-            margin: 25px 0px;
-        }
     }
 
     .right-box .button-reset {
