@@ -87,15 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function checkValues() {
-        if(isNaN(valueBill) || valueBill == null || valueBill == undefined || valueBill == "") {
+        if(isNaN(valueBill)) {
             valueBill = 0;
         } 
 
-        if(isNaN(valuePerson) || valuePerson == null || valuePerson == undefined) {
+        if(isNaN(valuePerson)) {
             valuePerson = 1;
         }
 
-        if(isNaN(valueTip) || valueTip == null || valueTip == undefined || valueTip == "") {
+        if(isNaN(valueTip)) {
             valueTip = 0;
         } 
 
@@ -111,14 +111,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 fullTip = valueBill * valueTip / 100.0;
                 tipsFromPerson = fullTip / valuePerson;
 
-                console.log(valueBill, valueTip);
-
                 if(tipsFromPerson.toFixed(2) * valuePerson < fullTip) {
                     tipsFromPerson += 0.01; 
                 }
     
                 tipAmount.innerHTML = tipsFromPerson.toFixed(2);
-                total.innerHTML = fullTip.toFixed(2);
+                total.innerHTML = (tipsFromPerson + valueBill / valuePerson).toFixed(2);
             }
         }
     }
