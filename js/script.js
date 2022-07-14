@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
         errorPerson.style.display = "none";
         person.classList.remove("error");
 
+        
+        tipAmount.innerHTML = "0.00";
+        total.innerHTML = "0.00";
+
 
         checkValues();
     })
